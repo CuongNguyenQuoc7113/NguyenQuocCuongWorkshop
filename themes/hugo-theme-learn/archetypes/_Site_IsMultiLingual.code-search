@@ -1,0 +1,18 @@
+# Query: .Site.IsMultiLingual
+# ContextLines: 1
+
+3 results - 2 files
+
+themes\hugo-theme-learn\layouts\partials\menu.html:
+  41  
+  42:     {{ if or hugo.IsMultiLingual $showvisitedlinks }}
+  43      <section id="prefooter">
+
+  45        <ul>
+  46:       {{ if and hugo.IsMultiLingual (not .Site.Params.DisableLanguageSwitchingButton)}}
+  47          <li>
+
+themes\hugo-theme-learn\layouts\partials\search.html:
+   9  <script type="text/javascript">
+  10:     {{ if hugo.IsMultiLingual }}
+  11          var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
